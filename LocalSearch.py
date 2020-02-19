@@ -20,7 +20,6 @@ class LocalSearch():
         while not (self.isFinished(states)):
             self.checkRunTime(startTime)
 
-            numberOfSteps += 1
             currStateColor = currentState.color
             adjStates = currentState.adjStates
             conflictedStates.clear()
@@ -41,6 +40,7 @@ class LocalSearch():
             else:
                 currentState = random.choice(conflictedStates)
                 self.changeColor(currentState, colors, currStateColor)
+                numberOfSteps += 1
 
         self.printOutput(states, numberOfSteps)
 
