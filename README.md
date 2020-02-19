@@ -3,17 +3,14 @@
 a1ConstraintSatisfaction is assignment 1 for comp560 at UNC
 
 HOW TO RUN:
-My project consists of 5 main files:
+My project consists of 5 main files, please download these:
     - BackTracker.py
     - BackTrackerMain.py
     - LocalSearch.py
     - LocalSearchMain.py
     - State.py
     
-I have separated each search implementation into its own "main" file. For example, to run the backtracker, you must run BackTrackerMain.py.
-The "main" files read the input file and create a search object located in either BackTracker.py or LocalSearch.py.
-The searches are run in either BackTracker.py or LocalSearch.py.
-State.py is simply a file housing the State object.
+ You must run each search individually. Sorry for the trouble, I simply found it easier to implement separate 'main' methods
 
 To run Backtracker in the shell, use the command:
     python BackTrackerMain.py filename.txt
