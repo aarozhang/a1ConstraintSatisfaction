@@ -75,6 +75,6 @@ class LocalSearch():
     # monitors runtime to avoid infinite looping
     def checkRunTime(self, startTime):
         elapsedTime = startTime - time.time()
-        if (elapsedTime > 1):
+        if (elapsedTime > 60):
             print('Runtime has exceeded maximum time allowance. Please rerun the program.')
             exit()
